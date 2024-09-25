@@ -5,12 +5,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDXZw7kuxEbzOECF8oFCv5TZ_zXo3mkFO0",
-  authDomain: "wealthwisefx-c9919.firebaseapp.com",
-  projectId: "wealthwisefx-c9919",
-  storageBucket: "wealthwisefx-c9919.appspot.com",
-  messagingSenderId: "718451202525",
-  appId: "1:718451202525:web:4171a7840a23b64d74fe34",
+  apiKey: "AIzaSyBL9tMC2_ZcNofl7VWSUbvjIVY3RfOhdLw",
+  authDomain: "wealthwisefx-5a66a.firebaseapp.com",
+  projectId: "wealthwisefx-5a66a",
+  storageBucket: "wealthwisefx-5a66a.appspot.com",
+  messagingSenderId: "301366350687",
+  appId: "1:301366350687:web:e0b476fe6448eb6af0dcea"
 };
 
 // Initialize Firebase
