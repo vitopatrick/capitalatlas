@@ -61,6 +61,7 @@ const Plan = () => {
                       color="primary"
                       fullWidth
                       onClick={() => navigate("/register")}
+                      sx={{ textTransform: "capitalize" }}
                     >
                       Start Today !!
                     </Button>
