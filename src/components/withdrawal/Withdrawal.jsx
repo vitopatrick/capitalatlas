@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import {
   Box,
   Button,
@@ -13,26 +13,51 @@ import {
   TextField,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  doc,
+  serverTimestamp,
+  getDoc,
+} from "firebase/firestore";
 import { store } from "../../firebase";
 import { toast } from "react-toastify";
 import { options } from "./options";
 import { UserContext } from "../../context/UserContext";
+// import { getDoc } from "firebase/firestore/lite";
 
 const Withdrawal = () => {
   toast.configure();
+
   // form state
+
   const addressRef = useRef();
   const withdrawalAmtRef = useRef();
   const [value, setValue] = useState("");
-  // function to set modal open and close
-  const [open, setOpen] = useState(false);
-  const handleClose = () => setOpen(false);
+  const [verified, setVerified] = useState();
 
   // use the react router Hook
   const navigate = useNavigate();
 
   const { user } = useContext(UserContext);
+
+  // function to set modal open and close
+  const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
+
+  useEffect(() => {
+    const fetchUserDetails = async () => {
+      try {
+        const docRef = doc(store, "/users", `${user.email}`);
+        const userDetails = await getDoc(docRef);
+
+        setVerified(userDetails.data());
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchUserDetails();
+  }, [user.email]);
 
   // function to get value
   const getValue = (id) => {
@@ -51,6 +76,13 @@ const Withdrawal = () => {
         `/${user.email}`,
         "withdrawal"
       );
+
+      if (verified?.verified === false)
+        return toast.error("Please Verify account", {
+          theme: "colored",
+          position: "top-center",
+        });
+
       await addDoc(collectionRef, {
         amount: withdrawalAmtRef.current.value,
         date: serverTimestamp(),
