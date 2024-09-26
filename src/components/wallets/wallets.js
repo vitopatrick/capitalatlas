@@ -11,13 +11,13 @@ import usdtLogo from "../../img/usdt.png";
 export const wallets = [
   {
     coin: "Bitcoin",
-    address: "bc1q06xtrepmhmj2msnzw2ney7jzpeccyjz4hqjrmq",
+    address: "bc1q60fyad2pfvjra2lhweuhmesqwk7e9cfvagvx89",
     addressName: "BTC Address",
     icon: BtcLogo,
   },
   {
     coin: "ETH ",
-    address: "0x9a5235891E9B696c84ec45fC65486A23B501ff6f",
+    address: "0x2c953a15A7a1AD4A28880cB15f37cC425006A779",
     addressName: "ETH Address:",
     icon: ethLogo,
   },
@@ -29,7 +29,7 @@ export const wallets = [
   // },
   {
     coin: "USDT ERC20",
-    address: "0x9a5235891E9B696c84ec45fC65486A23B501ff6f",
+    address: "0x2c953a15A7a1AD4A28880cB15f37cC425006A779",
     addressName: "USDT ERC20 Address",
     icon: usdtLogo,
   },
