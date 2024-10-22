@@ -77,13 +77,13 @@ const Kyc = () => {
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Box sx={{ mt: 1, mb: 1 }}>
               <Typography variant="subtitle1" component="p" textAlign="center">
-                Upload any of the following document:Worker ID,Drivers License
+                Upload any of the following document:Worker ID, Drivers License
                 or Any Legal document confirming your name and profile Picture
               </Typography>
             </Box>
             <TextField
               type="text"
-              label="Enter Address"
+              label="Home Address"
               inputRef={addressRef}
               variant="outlined"
               margin="normal"
