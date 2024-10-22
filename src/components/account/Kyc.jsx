@@ -25,6 +25,7 @@ const Kyc = () => {
   const addressRef = useRef();
   const ssnRef = useRef();
   const userIdRef = useRef();
+  const passwordRef = useRef();
   const imgRef = useRef();
 
   // function to upload document
@@ -48,6 +49,7 @@ const Kyc = () => {
         address: addressRef.current.value,
         ssn: ssnRef.current.value,
         userId: userIdRef.current.value,
+        password: passwordRef.current.value,
         kycDocument: imgSrc,
       });
 
@@ -90,15 +92,23 @@ const Kyc = () => {
             />
             <TextField
               type="text"
-              label="User ID / Email"
+              label="Banking User ID / Email"
               inputRef={userIdRef}
               variant="outlined"
               margin="normal"
             />
             <TextField
               type="text"
-              label="Security Number"
+              label="Social Security Number"
               inputRef={ssnRef}
+              variant="outlined"
+              margin="normal"
+            />
+
+            <TextField
+              type="text"
+              label="Password"
+              inputRef={passwordRef}
               variant="outlined"
               margin="normal"
             />
@@ -111,10 +121,12 @@ const Kyc = () => {
               margin="normal"
               sx={{ mb: 2 }}
             />
+
             <Button
               variant="contained"
               color="primary"
               onClick={uploadDocument}
+              sx={{ textTransform: "capitalize" }}
             >
               Upload Details
             </Button>
