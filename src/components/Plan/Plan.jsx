@@ -22,38 +22,25 @@ const Plan = () => {
               <Grid item xs={12} md={4}>
                 <Paper sx={{ p: 2 }}>
                   <Box>
-                    <Typography
-                      variant="body1"
-                      component="h1"
-                      gutterBottom
-                      textAlign="center"
-                    >
+                    <Typography variant="body1" component="h1" gutterBottom>
                       {plan.title}
                     </Typography>
-                    <Typography
-                      variant="h5"
-                      component="h1"
-                      gutterBottom
-                      textAlign="center"
-                    >
+                    <Typography variant="h5" component="h1" gutterBottom>
                       {plan.price}
                     </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      component="h1"
-                      gutterBottom
-                      textAlign="center"
-                    >
+                    <Typography variant="subtitle1" component="h1" gutterBottom>
                       Duration:{plan.Duration}
                     </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      component="h1"
-                      gutterBottom
-                      textAlign="center"
-                    >
-                      ROI:{plan.roi}
-                    </Typography>
+                    {plan.offers.map((offer) => (
+                      <Typography
+                        variant="subtitle1"
+                        component="h1"
+                        gutterBottom
+                        key={offer}
+                      >
+                        {offer}
+                      </Typography>
+                    ))}
                   </Box>
                   <Box sx={{ mt: 2, mb: 2 }}>
                     <Button

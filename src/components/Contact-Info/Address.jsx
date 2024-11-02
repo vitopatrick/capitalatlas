@@ -23,7 +23,7 @@ const Address = () => {
             </div>
             <div>
               <h1 className="fs-4">Email</h1>
-              <p>info.wealthwisefx@gmail.com</p>
+              <p>info.capitalatlase@gmail.com</p>
             </div>
           </div>
           <div className="address__card">
