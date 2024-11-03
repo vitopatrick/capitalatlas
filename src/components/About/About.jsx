@@ -14,7 +14,7 @@ const About = () => {
                 Create your cryptocurrency portfolio today
               </h1>
               <p className="text-muted">
-                Wealth Wise has a variety of features that make it the best
+                capital atlas has a variety of features that make it the best
                 place to start trading
               </p>
             </div>

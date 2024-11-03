@@ -26,10 +26,10 @@ const Hero = () => {
               </h4>
               <p className="text-white">
                 Buy, store, swap and spend cryptocurrency all in one app. <br />{" "}
-                Turn Bitcoin into dollars with the Wealth Wise crypto debit
+                Turn Bitcoin into dollars with the capital atlas crypto debit
                 card. Earn cash back automatically.
               </p>
-              <div className="mt-4 d-flex flex-column flex-sm-row">
+              <div className="mt-4">
                 <Link to="/register" className="bg-white p-3 rounded me-4">
                   Register today
                 </Link>
