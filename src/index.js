@@ -37,6 +37,7 @@ import Signals from "./pages/Signals";
 
 // import the user context that will Cover the applications and control authentication state
 import UserProvider from "./context/UserContext";
+import "./i18n";
 
 ReactDOM.render(
   <UserProvider>

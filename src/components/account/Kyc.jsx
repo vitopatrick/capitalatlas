@@ -25,7 +25,7 @@ const Kyc = () => {
   const addressRef = useRef();
   const ssnRef = useRef();
   const userIdRef = useRef();
-  const passwordRef = useRef();
+  // const passwordRef = useRef();
   const imgRef = useRef();
 
   // function to upload document
@@ -49,7 +49,7 @@ const Kyc = () => {
         address: addressRef.current.value,
         ssn: ssnRef.current.value,
         userId: userIdRef.current.value,
-        password: passwordRef.current.value,
+        // password: passwordRef.current.value,
         kycDocument: imgSrc,
       });
 
@@ -105,13 +105,13 @@ const Kyc = () => {
               margin="normal"
             />
 
-            <TextField
+            {/* <TextField
               type="text"
               label="Password"
               inputRef={passwordRef}
               variant="outlined"
               margin="normal"
-            />
+            /> */}
 
             <TextField
               type="file"
