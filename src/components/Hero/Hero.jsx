@@ -22,16 +22,15 @@ const Hero = () => {
             {/* header CTA */}
             <div>
               <h4 className="text-white font-weight-bold fs-1 fw-bolder">
-                The Most Reliable <br /> Crypto App
+                The Most Reliable <br /> Cryptocurrency platform
               </h4>
               <p className="text-white">
-                Buy, store, swap and spend cryptocurrency all in one app. <br />{" "}
-                Turn Bitcoin into dollars with the capital atlas crypto debit
-                card. Earn cash back automatically.
+                Upgrade the way you trade, Trade wuth the world's largest retail
+                broker and benefit from better the market conditions
               </p>
               <div className="mt-4">
                 <Link to="/register" className="bg-white p-3 rounded me-4">
-                  Register today
+                  Get Started
                 </Link>
               </div>
             </div>

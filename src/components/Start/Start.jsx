@@ -7,11 +7,11 @@ const Start = () => {
     <div className="start">
       <div className="start__grid">
         <div className="start__text">
-          <h1 className="text-primary fw-bold">Ready To Start Your Mining</h1>
+          <h1 className="text-info fw-bold">Ready To Start Your Mining</h1>
           <p>Just create an account on our site and start your first mining.</p>
         </div>
         <div className="start__btn">
-          <Link to="register" className="btn btn-primary text-sec">
+          <Link to="register" className="btn btn-info text-sec">
             Start Today
           </Link>
         </div>

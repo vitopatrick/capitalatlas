@@ -84,11 +84,11 @@ const Investment = () => {
                 <Box sx={{ mt: 2, mb: 2 }}>
                   <Button
                     color="primary"
-                    variant="outlined"
+                    sx={{ textTransform: "capitalize" }}
                     fullWidth
                     onClick={() => addInvestment(plan.min, plan.title)}
                   >
-                    Invest Now !!
+                    Start Now
                   </Button>
                 </Box>
               </Paper>

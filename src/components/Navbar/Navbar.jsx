@@ -58,7 +58,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/register"
-              className="my-2 w-100 btn btn-primary text-white text-sec "
+              className="my-2 w-100 btn btn-info text-white text-sec "
             >
               Begin Here
             </Link>

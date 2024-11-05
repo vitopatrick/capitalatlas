@@ -137,7 +137,7 @@ const Form = () => {
       <div className="form__card shadow p-3 rounded mt-2">
         <div className="form__body">
           <div className="form__title text-center my-5">
-            <Link to="/" className="fs-1 fw-bolder text-main text-primary">
+            <Link to="/" className="fs-1 fw-bolder text-main text-info">
               capital atlas
             </Link>
             <p className="text-muted">
@@ -213,16 +213,13 @@ const Form = () => {
                 {""}of capital atlas
               </p>
             </div>
-            <button
-              className="btn btn-block btn-primary block"
-              onClick={saveUser}
-            >
+            <button className="btn btn-block btn-info block" onClick={saveUser}>
               Register
             </button>
           </div>
           <div className="text-center mt-2">
-            <p className="text-primary">
-              © Copyright 2022 capital atlas All Rights Reserved.
+            <p className="text-info">
+              © Copyright 2024 capital atlas All Rights Reserved.
             </p>
           </div>
         </div>

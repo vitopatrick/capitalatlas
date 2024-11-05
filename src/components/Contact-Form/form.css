@@ -25,7 +25,7 @@ textarea {
   color: #777;
   border-radius: 0.2rem;
   outline: none;
-  border: 1px solid #081125;
+  border: 1px solid #020617;
 }
 
 .form__group textarea {
@@ -43,7 +43,7 @@ textarea {
   border: none;
   font-size: 1rem;
   padding: 0.4rem;
-  background-color: #081125;
+  background-color: #020617;
   color: white;
   cursor: pointer;
   border-radius: 0.2rem;

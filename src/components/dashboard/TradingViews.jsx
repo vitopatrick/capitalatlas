@@ -48,7 +48,7 @@ const TradingViews = () => {
       </Box>
       <Box sx={{ mt: 4 }}>
         <Typography variant="caption" textAlign="center">
-          capital atlas © 2022
+          capital atlas © 2024
         </Typography>
       </Box>
     </div>

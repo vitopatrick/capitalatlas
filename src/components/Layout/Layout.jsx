@@ -87,9 +87,14 @@ const Layout = (props) => {
           <Typography
             variant="h4"
             noWrap
-            component="h1"
+            component="h3"
             onClick={goHome}
-            sx={{ p: 1, color: "#ffff", cursor: "pointer" }}
+            sx={{
+              p: 1,
+              color: "#ffff",
+              cursor: "pointer",
+              textTransform: "capitalize",
+            }}
           >
             capital atlas
           </Typography>

@@ -12,8 +12,8 @@ import {
 
 const Reason = () => {
   return (
-    <IconContext.Provider value={{ size: "1.6rem", color: "#214497" }}>
-      <div className="reason text-white">
+    <IconContext.Provider value={{ size: "1.6rem", color: "#020617" }}>
+      <div className="reason">
         <div className="container d-flex flex-column">
           <div className="my-4 text-center">
             <h1 className="fs-2 fw-bolder">Why Choose capital atlas ?</h1>
