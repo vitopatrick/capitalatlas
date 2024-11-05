@@ -1,7 +1,7 @@
 export const plans = [
   {
     title: "Stater",
-    Duration: "1 Month",
+    Duration: "2 weeks",
     price: "$1,000",
     min: "1000",
     roi: "60%",
@@ -16,7 +16,7 @@ export const plans = [
   },
   {
     title: "Basic",
-    Duration: "1 month",
+    Duration: "2 weeks",
     price: "$1,000",
     min: "1000",
     roi: "60%",
@@ -31,7 +31,7 @@ export const plans = [
   },
   {
     title: "Gold",
-    Duration: "2 months",
+    Duration: "2 weeks",
     price: "$5,000",
     min: "5000",
     roi: "60%",
@@ -46,9 +46,9 @@ export const plans = [
   },
   {
     title: "Sliver",
-    Duration: "1 Month",
-    price: "$2,000",
-    min: "2000",
+    Duration: "2 weeks",
+    price: "$5,000",
+    min: "5000",
     roi: "60%",
     offers: [
       "15 daily top up",
@@ -61,9 +61,9 @@ export const plans = [
   },
   {
     title: "Standard",
-    Duration: "2 weeks",
-    price: "$1,000",
-    min: "1000",
+    Duration: "1 month",
+    price: "$10,000",
+    min: "10000",
     roi: "60%",
     offers: [
       "20 daily top up",
@@ -76,9 +76,9 @@ export const plans = [
   },
   {
     title: "VIP",
-    Duration: "1 month",
-    price: "$10,000",
-    min: "10000",
+    Duration: "2 Months",
+    price: "$50,000",
+    min: "50000",
     roi: "60%",
     offers: [
       "20 daily top up",
