@@ -58,32 +58,28 @@ const Investment = () => {
       <Box sx={{ mt: 2 }}>
         <Grid container spacing={3}>
           {plans.map((plan) => (
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={4}>
               <Paper sx={{ p: 2 }}>
                 <Box>
-                  <Typography
-                    textAlign="center"
-                    variant="h6"
-                    gutterBottom
-                    component="div"
-                  >
+                  <Typography variant="h6" gutterBottom component="div">
                     {plan.title}
                   </Typography>
-                  <Typography
-                    variant="h4"
-                    component="div"
-                    textAlign="center"
-                    gutterBottom
-                  >
+                  <Typography variant="h4" component="div" gutterBottom>
                     {plan.price}
                   </Typography>
-                  <Typography
-                    variant="body1"
-                    component="div"
-                    textAlign="center"
-                  >
+                  <Typography variant="body1" component="div">
                     Duration : {plan.Duration}
                   </Typography>
+                  {plan.offers.map((offer) => (
+                    <Typography
+                      variant="subtitle1"
+                      component="h1"
+                      gutterBottom
+                      key={offer}
+                    >
+                      {offer}
+                    </Typography>
+                  ))}
                 </Box>
                 <Box sx={{ mt: 2, mb: 2 }}>
                   <Button
