@@ -26,7 +26,9 @@ const Hero = () => {
               </h4>
               <p className="text-white">
                 Upgrade the way you trade, Trade wuth the world's largest retail
-                broker and benefit from better the market conditions
+                broker and benefit from better the market conditions, Enjoy our
+                unique copy trading feature with our low risk automated trading
+                system.
               </p>
               <div className="mt-4">
                 <Link to="/register" className="bg-white p-3 rounded me-4">
